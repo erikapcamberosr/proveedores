@@ -1,0 +1,139 @@
+* {
+    font-size: larger;
+    color: #0A3871;
+}
+
+/*********************** HEADER ***********************/
+.caja_header {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+}
+
+.titulo {
+    margin-left: 1em;
+    font-weight: bold;
+    font-size: large;
+    color: blue;
+}
+
+.subtitulo{
+    margin-left: 2sem;
+    font-weight: bold;
+    font-size: large;
+    color: blue;
+}
+
+/*********************** MAIN ***********************/
+
+main {
+    height: 50%;
+}
+
+.caja_main {
+    width: auto;
+    display: grid;
+    place-items: center;
+
+}
+
+.style_IniciarJuego {
+    background: #0A3871;
+    color: #E5E5E5;
+    border-radius: 25px;
+    height: 4em;
+    width: 12em;
+    cursor: pointer;
+
+}
+
+.style_AgregarPalabra {
+    background: #E5E5E5;
+    border-radius: 25px;
+    height: 4em;
+    width: 12em;
+    cursor: pointer;
+}
+
+.style_btn_desistir {
+    margin-left: 1rem;
+}
+
+.caja_juego {
+    width: auto;
+    display: grid;
+    place-items: center;
+}
+
+.otro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/***********************    FOOTER ***********************/
+footer {
+    text-align: center;
+    padding: 40px;
+    /*
+    bottom: 0;
+    position: absolute;*/
+}
+
+.caja_footer {
+    width: auto;
+    display: grid;
+    place-items: center;
+}
+
+.img_desarrollador {
+    border: 1px solid gray;
+    border-radius: 8px;
+    width: 25%;
+    max-width: 25%;
+    text-align: center;
+}
+
+.contacto_desarrollador {
+    color: #0A3871;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 20px;
+    text-align: center;
+}
+
+/*********************** vista celular ***********************/
+@media screen and (max-width:480px) {
+
+
+    h1 {
+        text-align: center;
+    }
+
+    .img_desarrollador {
+        width: 25%;
+        max-width: 25%;
+        height: auto;
+    }
+
+    .caja_header,
+    .caja_footer {
+        width: auto;
+        height: auto;
+    }
+
+    .style_IniciarJuego {
+        font-size: 5vw;
+        width: auto;
+        height: auto;
+        padding: auto;
+    }
+
+    canvas {
+        width: 100%;
+    }
+}
