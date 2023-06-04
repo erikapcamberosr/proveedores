@@ -1,4 +1,11 @@
 const video = document.getElementById("videoElement")
+
+let front = false;
+function cambiar_lado_camara() {
+    document.getElementById("flip-button").
+        front = !front;
+}
+
 const constraints = {
     audio: false,
     video: 
