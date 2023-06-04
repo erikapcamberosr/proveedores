@@ -73,6 +73,11 @@ main {
     justify-content: center;
 }
 
+.iframe{
+    width: 600px;
+    height: 600px;
+}
+
 
 
 /***********************    FOOTER ***********************/
