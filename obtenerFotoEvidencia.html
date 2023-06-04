@@ -29,46 +29,23 @@
                 </div>
             </div>
         </section>
+
         <section>
             <br>
             <div styles="text-align: center"></div>
-            <video id="videoElement" autoplay="true"></video>
-            </div>
-    
+            <video id="videoElement" autoplay="true"></video>            
+            </div>        
             <div>
                 <canvas id="canvasElement" height="720" width="1280"></canvas>
             </div>
-            <script>
-                const video = document.getElementById("videoElement")
-                navigator.mediaDevices.getUserMedia({ Audio: false, video: true })
-                    .then(
-                        (stream) => {
-                            video.srcObject = stream;
-                            console.log(stream)
-                        }
-                    )
-                    .catch((error) => {
-                        console.log(error);
-                    })
-
-                document.getElementById("takeSnapshot").addEventListener("click", () => {
-                    takePicture();
-                })
-
-                const canvas = document.getElementById("canvasElement")
-
-                function takePicture() {
-                    //const canvas = document.getElementById("canvasElement")
-                    let ctx = canvas.getContext('2d');
-                    ctx.drawImage(video, 0, 0, video.videoWidth, video.videoHeight);
-
-                }
-            </script>
         </section>
+
     </main>
     <footer>
     
     </footer>
+    
+    <script type="text/javascript" src="control_camera.js"></script>
     
 </body>
 </html>
