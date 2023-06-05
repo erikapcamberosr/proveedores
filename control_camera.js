@@ -1,4 +1,11 @@
 const video = document.getElementById("videoElement")
+const canvas = document.getElementById("canvasElement")
+
+var images_evidencia = new Array();
+
+const result = document.getElementById("result");
+const supported = navigator.mediaDevices.getSupportedConstraints().facingMode;
+result.textContent = supported ? "Supported!" : "Not supported!";
 
 let front = false;
 function cambiar_lado_camara() {
@@ -10,7 +17,7 @@ const constraints = {
     audio: false,
     video: 
     {
-        width: 400,
+        width: 500,
         height: 300,
         facingMode: { exact: "environment" }
         /*deviceId: deviceId ? { exact: deviceId } : undefined*/
@@ -18,10 +25,6 @@ const constraints = {
         /*frameRate: { ideal: 10, max: 15}*/
     }
 };
-
-const result = document.getElementById("result");
-const supported = navigator.mediaDevices.getSupportedConstraints().facingMode;
-result.textContent = supported ? "Supported!" : "Not supported!";
 
 navigator.mediaDevices
     .getUserMedia(constraints)
@@ -39,11 +42,15 @@ document.getElementById("takeSnapshot").addEventListener("click", () => {
     takePicture();
 })
 
-const canvas = document.getElementById("canvasElement")
-
 function takePicture() {
     //const canvas = document.getElementById("canvasElement")
     let ctx = canvas.getContext('2d');
-    ctx.drawImage(video, 0, 0, video.videoWidth, video.videoHeight);
+    ctx.drawImage(video, 0, 0, video.videoWidth/2, video.videoHeight/2);
+    
+    images_evidencia.push(ctx);    
 
+    let i = images_evidencia.length;
+    console.log(i);
+    console.log(canvas.width);
+    console.log(canvas.height);   
 }

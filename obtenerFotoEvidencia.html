@@ -18,29 +18,27 @@
         </div>
     </header>
     
-    <main>
+    <main class="caja_main">
     
         <section>
-            <div class="caja_main">
+            <div class="caja_canvas_foto">
                 <p class="titulo">Foto EVIDENCIAS</p><br>
                 <div class="otro">
                     <button id="takeSnapshot" class="btn-material">Sacar foto</button>
                     <button id="download" class="btn-material">Guardar imagen</button>
-                    <p id="result"></p>
+                    
                 </div>
             </div>
         </section>
-        
+        <p id="result">
         <section>
-            <br>
-            <div styles="text-align: center"></div>
-            <video id="videoElement" autoplay="true"></video>
-            
+            <div class="caja_canvas_foto">
+            <video id="videoElement" autoplay="true"></video>            
             </div>
         
-            <div>
-                <canvas id="canvasElement" height="720" width="1280"></canvas>
-            </div>
+            <div class="galeria">
+                <canvas id="canvasElement" width="500" height="300"></canvas>
+            </div>            
         </section>
 
     </main>
