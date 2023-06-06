@@ -39,28 +39,6 @@ main {
 
 }
 
-.style_IniciarJuego {
-    background: #0A3871;
-    color: #E5E5E5;
-    border-radius: 25px;
-    height: 4em;
-    width: 12em;
-    cursor: pointer;
-
-}
-
-.style_AgregarPalabra {
-    background: #E5E5E5;
-    border-radius: 25px;
-    height: 4em;
-    width: 12em;
-    cursor: pointer;
-}
-
-.style_btn_desistir {
-    margin-left: 1rem;
-}
-
 .caja_juego {
     width: auto;
     display: grid;
@@ -96,9 +74,6 @@ video {
     width: 600px;
     height: 600px;
 }
-
-
-
 
 /***********************    FOOTER ***********************/
 footer {
