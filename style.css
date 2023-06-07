@@ -7,9 +7,15 @@
 .caja_header {
     width: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 30px 60px;
+}
+
+img {
+    width: 15%;
+    max-width: 15%;
+    height: auto;
 }
 
 .titulo {
@@ -25,6 +31,8 @@
     font-size: large;
     color: blue;
 }
+
+
 
 /*********************** MAIN ***********************/
 
@@ -144,7 +152,6 @@ footer {
 /*********************** vista celular ***********************/
 @media screen and (max-width:480px) {
 
-
     h1 {
         text-align: center;
     }
@@ -153,19 +160,41 @@ footer {
         width: 25%;
         max-width: 25%;
         height: auto;
+    }  
+    
+    img{
+        width: 40%;
+        max-width: 40%;
+        height: auto;
     }
 
     .caja_header,
-    .caja_footer {
+    .caja_main,
+    .caja_footer
+    {
         width: auto;
         height: auto;
     }
 
+    .caja_header_carga{
+        width: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0px 60px;    
+    }
+   
     .style_IniciarJuego {
         font-size: 5vw;
         width: auto;
         height: auto;
         padding: auto;
+    }
+
+    iframe{
+        width: auto;
+        height: auto;
+    
     }
 
     
