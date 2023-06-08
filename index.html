@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-MX">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,13 +10,23 @@
 	<link rel="stylesheet" href="style.css">	
 	<link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Montserrat:wght@300&display=swap"
 		rel="stylesheet">
+	<!-- python-->
+	<!-- <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css"/> -->
+	<link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />	
+
 </head>
 
 <body>
 	<header>
 		<div class="caja_header_index">
 			<img src="imagenes/1_intento.png" alt="logo empresa">			
-			<p>11.50</p>
+			<div class="caja_precioT">
+
+				<p>11.50</p> 
+				<p class="titulo_tipoCambio">(tipo de cambio)</p>
+			</p>
+			</div>
+			
 		</div>
 	</header>
 
@@ -27,6 +37,13 @@
 				
 				<div>
 					<p class="titulo">NOMBRE PROVEEDOR</p>
+					
+					<py-script>	
+						import datetime as dt 
+						pyscript.write('date', dt.date.today().strftime('%A %B %d'))						
+					</py-script>
+					
+					<p class="titulo_tipoCambio">hoy es: <label id="date" class="titulo_tipoCambio"></label></p>
 					<br><br><br>
 					<p class="subtitulo">Menu</p>
 					<br><br>
@@ -47,6 +64,7 @@
 	</footer>
 
 	<script type="text/javascript" src="script.js"></script>
-
+	<!-- <script defer src="https://pyscript.net/alpha/pyscript.js"></script> -->
+	<script defer src="https://pyscript.net/latest/pyscript.js"></script>
 </body>
 </html>
