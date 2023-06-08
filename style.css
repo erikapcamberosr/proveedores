@@ -173,6 +173,15 @@ footer {
         height: auto;
     }
 
+    .caja_header_index{
+        width: auto;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 15px 10px;
+    }
+
     .caja_header_carga{ 
         width: auto;
         height: auto;
