@@ -181,7 +181,15 @@ footer {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        padding: 0px 60px;    
+        padding: 10px 10px;    
+    }
+
+    .caja_header_foto {
+        width: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px 10px;
     }
    
     .style_IniciarJuego {
