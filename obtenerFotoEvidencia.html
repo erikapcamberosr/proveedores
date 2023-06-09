@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Montserrat:wght@300&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
@@ -25,23 +27,36 @@
         <section>
             <div class="caja_main">
                 <p class="titulo">Foto EVIDENCIAS</p><br>
+                <!--
                 <div class="otro">
                     <button id="takeSnapshot" class="btn-material">Sacar foto</button>
-                    <button id="download" class="btn-material">Guardar imagen</button>                                        
+                    <button id="download" class="btn-material">Guardar imagen</button>
                 </div>
+                -->
             </div>
         </section>
-        <p id="result">
-        <section>
-            <div class="caja_canvas_foto">
-            <video id="videoElement" autoplay="true"></video>            
-            </div>
+        <p id="result">            
+        <section>            
+            <div class="grid-container-foto">
+                <div class="grid-item-foto">
+                    <video id="videoElement" autoplay="true"></video>
+                </div>
+                <div class="grid-item-foto">
+                    <div class="grid_menu_galeria">
+                        <div class="grid-item-foto">
+                            <canvas id="canvasElement" width="250" height="150"></canvas>
+                        </div>                        
+                        <div class="grid-item-foto grid-item-opciones">                            
+                            <button id="takeSnapshot" class="btn_opc_foto"><i class="fa fa-camera"></i></button>
+                            <button class="btn_opc_foto"><i class="fa fa-save"></i></button>                            
+                            <button class="btn_opc_foto"><i class="fa fa-picture-o"></i></button>
+                            
+                        </div>                        
+                    </div>                    
+                </div>              
+            </div>    
+        </section>
         
-            <div class="galeria">
-                <canvas id="canvasElement" width="500" height="300"></canvas>
-            </div>            
-        </section>
-
     </main>
     <footer>
     
