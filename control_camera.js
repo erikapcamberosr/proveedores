@@ -19,7 +19,7 @@ const constraints = {
     {
         width: 500,
         height: 300,
-        facingMode: { exact: "user" }
+        facingMode: { exact: "environment" }
         /*deviceId: deviceId ? { exact: deviceId } : undefined*/
         /*facingMode: front ? "user" : "environment" */
         /*frameRate: { ideal: 10, max: 15}*/

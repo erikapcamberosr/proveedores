@@ -99,14 +99,14 @@ main {
 .grid-item-opciones{
     display: grid;
     grid-template-columns: auto;
-    gap: 10px;    
+    gap: 5px;    
 }
 
 .btn_opc_foto{
     
     background-color: #52BE80;
     /* Blue background */
-    border: none;
+    border: 3px solid #000;
     /* Remove borders */
     color: #FFF;
     /* White text */
