@@ -100,13 +100,15 @@ main {
     display: grid;
     grid-template-columns: auto;
     gap: 5px;    
+    justify-content: center;
+    align-content: center;
 }
 
 .btn_opc_foto{
     
     background-color: #52BE80;
     /* Blue background */
-    border: 3px solid #000;
+    border: 3px solid #221b1b;
     /* Remove borders */
     color: #FFF;
     /* White text */
