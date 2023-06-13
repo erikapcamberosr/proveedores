@@ -13,53 +13,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
-
-<body>
+<body class="body_fondo">
     <header>
-        <div class="caja_header_foto">
-            <img src="imagenes/1_intento.png" alt="logo empresa" width="15%" height="15%">
-            <p>11.50</p>
-        </div>
+        <p id="result">  
     </header>
-    
-    <main class="caja_main">    
-        
-        <section>
-            <div class="caja_main">
-                <p class="titulo">Foto EVIDENCIAS</p><br>
-                <!--
-                <div class="otro">
-                    <button id="takeSnapshot" class="btn-material">Sacar foto</button>
-                    <button id="download" class="btn-material">Guardar imagen</button>
-                </div>
-                -->
-            </div>
-        </section>
-        <p id="result">            
+    <main class="caja_main"> 
+                   
         <section>            
             <div class="grid-container-foto">
                 <div class="grid-item-foto">
                     <video id="videoElement" autoplay="true"></video>
                 </div>
-                <div class="grid-item-foto">
-                    <div class="grid_menu_galeria">
-                        <div class="grid-item-foto">
-                            <canvas id="canvasElement" width="250" height="150"></canvas>
-                        </div>                        
-                        <div class="grid-item-opciones">                            
-                            
-                            <button id="takeSnapshot" class="btn_opc_foto"><i class="fa fa-camera"></i></button>
-                            <button class="btn_opc_foto"><i class="fa fa-save"></i></button>                            
-                            <button class="btn_opc_foto"><i class="fa fa-picture-o"></i></button>
-                            
-                        </div>                        
-                    </div>                    
+                <div class="grid-item-foto">                 
+                    <div class="grid-item-foto">
+                        <canvas id="canvasElement" width="250" height="150"></canvas>
+                    </div>              
                 </div>              
             </div>    
         </section>
-        
     </main>
     <footer>
+        <div class="grid-item-opciones">        
+            <button id="takeSnapshot" class="btn_opc_foto"><i class="fa fa-camera"></i></button>
+            <button class="btn_opc_foto"><i class="fa fa-save"></i></button>
+            <button class="btn_opc_foto"><i class="fa fa-picture-o"></i></button>
+        
+        </div>
     
     </footer>
     

@@ -50,14 +50,17 @@ img {
 /*********************** MAIN ***********************/
 
 main {
-    height: 50%;
+    height: 100%;
+}
+
+.body_fondo{
+    background: #000;
 }
 
 .caja_main {
     width: auto;
     display: grid;
     place-items: center;
-
 }
 
 .caja_juego {
@@ -85,7 +88,7 @@ main {
 .grid-item-foto{
     border: 5px solid rgba(0, 0, 0, 0.8);
     padding: 0px; 
-    background: FFF;   
+    background: #000;   
     
 }
 
@@ -98,31 +101,58 @@ main {
 
 .grid-item-opciones{
     display: grid;
-    grid-template-columns: auto;
-    gap: 5px;    
+    grid-template-columns: auto auto auto;
+    gap: 13px;    
     justify-content: center;
     align-content: center;
+    padding: 20px;
 }
 
 .btn_opc_foto{
     
     background-color: #52BE80;
     /* Blue background */
-    border: 3px solid #221b1b;
+    border: 3px solid #5450d5;
     /* Remove borders */
     color: #FFF;
     /* White text */
     padding: 12px 16px;
     /* Some padding */
-    font-size: 16px;
+    font-size: 64px;
     /* Set a font size */
     /*cursor: pointer;*/
     /* Mouse pointer on hover */
+    border-radius: 50%;
 }
 
 .btn_opc_foto:hover{
     background-color: #145A32;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
+
+.btn_opc_foto:active{
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn_opc_foto::after{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+canvas{
+    background: #000;
+}
+
 
 video {
     background: rgba(0, 0, 0, 0.2);
